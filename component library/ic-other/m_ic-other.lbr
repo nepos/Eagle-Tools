@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -336,6 +336,20 @@ NS Package M08A</description>
 <pin name="!HOLD" x="-10.16" y="0" length="short" direction="pas"/>
 <pin name="VDD" x="-10.16" y="2.54" length="short" direction="pas"/>
 </symbol>
+<symbol name="M24M02">
+<pin name="E2" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="VSS" x="0" y="-15.24" length="short" rot="R90"/>
+<pin name="SDA" x="-12.7" y="2.54" length="short"/>
+<pin name="SCL" x="-12.7" y="0" length="short"/>
+<pin name="!WC" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="VCC" x="0" y="15.24" length="short" rot="R270"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="2.54" y="-15.24" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="2.54" y="-17.78" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AT26DF081A" prefix="IC" uservalue="yes">
@@ -552,6 +566,37 @@ Features:
 <technology name="">
 <attribute name="MANUF" value="Microchip" constant="no"/>
 <attribute name="PARTNUM" value="SST25WF080B?-40I/SN" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M24M02-DR" prefix="U">
+<description>The M24M02-DR is a 2 Mbit I²C-compatible EEPROM (Electrically Erasable PROgrammable Memory) organized as 256 K × 8 bits.
+&lt;br&gt;
+The M24M02-DR can operate with a supply voltage from 1.8 V to 5.5 V, over an ambient temperature range of –40 °C / +85 °C.
+&lt;br&gt;
+The M24M02-DR offers an additional page, named the Identification Page (256 byte). The Identification Page can be used to store se
+nsitive application parameters which can be (later) permanently locked in Read-only mode.
+&lt;br&gt;
+See &lt;a href="http://www.mouser.com/ds/2/389/CD00290537-470808.pdf"&gt;http://www.mouser.com/ds/2/389/CD00290537-470808.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="M24M02" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="SO8" package="SO08">
+<connects>
+<connect gate="G$1" pin="!WC" pad="7"/>
+<connect gate="G$1" pin="E2" pad="3"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUF" value="ST"/>
+<attribute name="PARTNUM" value="M24M02-DR?" constant="no"/>
 </technology>
 </technologies>
 </device>

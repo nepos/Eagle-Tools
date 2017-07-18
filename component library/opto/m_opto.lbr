@@ -1039,36 +1039,36 @@ Source: http://www.osram.convergy.de ... LSG T770.pdf</description>
 </package>
 <package name="PANASONIC-AXT530124">
 <description>The counterpart is ATX630124</description>
-<smd name="15" x="-2.8" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="14" x="-2.4" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="13" x="-2" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="12" x="-1.6" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="11" x="-1.2" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="10" x="-0.8" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="9" x="-0.4" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="8" x="0" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="7" x="0.4" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="6" x="0.8" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="5" x="1.2" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="4" x="1.6" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="3" x="2" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="2" x="2.4" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="1" x="2.8" y="-1.64" dx="0.92" dy="0.23" layer="1" rot="R90"/>
-<smd name="30" x="2.8" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="29" x="2.4" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="28" x="2" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="27" x="1.6" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="26" x="1.2" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="25" x="0.8" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="24" x="0.4" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="23" x="0" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="22" x="-0.4" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="21" x="-0.8" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="20" x="-1.2" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="19" x="-1.6" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="18" x="-2" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="17" x="-2.4" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
-<smd name="16" x="-2.8" y="1.64" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="15" x="2.8" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="14" x="2.4" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="13" x="2" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="12" x="1.6" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="11" x="1.2" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="10" x="0.8" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="9" x="0.4" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="8" x="0" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="7" x="-0.4" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="6" x="-0.8" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="5" x="-1.2" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="4" x="-1.6" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="3" x="-2" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="2" x="-2.4" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="1" x="-2.8" y="-1.66" dx="0.92" dy="0.23" layer="1" rot="R270"/>
+<smd name="30" x="-2.8" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="29" x="-2.4" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="28" x="-2" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="27" x="-1.6" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="26" x="-1.2" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="25" x="-0.8" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="24" x="-0.4" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="23" x="0" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="22" x="0.4" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="21" x="0.8" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="20" x="1.2" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="19" x="1.6" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="18" x="2" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="17" x="2.4" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
+<smd name="16" x="2.8" y="1.66" dx="0.92" dy="0.23" layer="1" rot="R90"/>
 <smd name="M@2" x="3.7" y="-1.5" dx="0.8" dy="1.2" layer="1"/>
 <smd name="M@1" x="3.7" y="1.5" dx="0.8" dy="1.2" layer="1"/>
 <smd name="M@3" x="-3.7" y="1.5" dx="0.8" dy="1.2" layer="1"/>
@@ -1088,7 +1088,7 @@ Source: http://www.osram.convergy.de ... LSG T770.pdf</description>
 <wire x1="-2.8" y1="-0.5" x2="-2.8" y2="0" width="0.08" layer="21"/>
 <wire x1="-2.8" y1="0" x2="-2.8" y2="0.5" width="0.08" layer="21"/>
 <wire x1="-2.8" y1="0" x2="2.8" y2="0" width="0.05" layer="21" style="shortdash"/>
-<circle x="3.4" y="0.6" radius="0.2" width="0.127" layer="21"/>
+<circle x="-3.5" y="-0.5" radius="0.2" width="0.127" layer="21"/>
 <wire x1="-4.25" y1="-1.5" x2="4.25" y2="-1.5" width="0.1" layer="21"/>
 <wire x1="4.25" y1="-1.5" x2="4.25" y2="1.5" width="0.1" layer="21"/>
 <wire x1="4.25" y1="1.5" x2="-4.25" y2="1.5" width="0.1" layer="21"/>
@@ -2415,35 +2415,35 @@ http://www.osram-os.com/Graphics/XPic9/00134830_0.pdf</description>
 <devices>
 <device name="" package="PANASONIC-AXT530124">
 <connects>
-<connect gate="G$1" pin="!RESET" pad="26"/>
-<connect gate="G$1" pin="AF_GND" pad="1"/>
-<connect gate="G$1" pin="AF_VDD" pad="29"/>
-<connect gate="G$1" pin="AGND" pad="2"/>
-<connect gate="G$1" pin="AVDD" pad="28"/>
-<connect gate="G$1" pin="DGND@11" pad="25"/>
-<connect gate="G$1" pin="DGND@12" pad="6"/>
-<connect gate="G$1" pin="DGND@14" pad="7"/>
-<connect gate="G$1" pin="DGND@15" pad="23"/>
-<connect gate="G$1" pin="DGND@18" pad="9"/>
-<connect gate="G$1" pin="DGND@21" pad="20"/>
-<connect gate="G$1" pin="DGND@24" pad="12"/>
-<connect gate="G$1" pin="DGND@26" pad="13"/>
-<connect gate="G$1" pin="DGND@29" pad="16"/>
-<connect gate="G$1" pin="DGND@6" pad="3"/>
-<connect gate="G$1" pin="DOVDD" pad="14"/>
-<connect gate="G$1" pin="ID" pad="15"/>
-<connect gate="G$1" pin="MCN" pad="10"/>
-<connect gate="G$1" pin="MCP" pad="21"/>
-<connect gate="G$1" pin="MDN1" pad="19"/>
-<connect gate="G$1" pin="MDN2" pad="22"/>
-<connect gate="G$1" pin="MDP1" pad="11"/>
-<connect gate="G$1" pin="MDP2" pad="8"/>
+<connect gate="G$1" pin="!RESET" pad="9"/>
+<connect gate="G$1" pin="AF_GND" pad="2"/>
+<connect gate="G$1" pin="AF_VDD" pad="3"/>
+<connect gate="G$1" pin="AGND" pad="4"/>
+<connect gate="G$1" pin="AVDD" pad="5"/>
+<connect gate="G$1" pin="DGND@11" pad="11"/>
+<connect gate="G$1" pin="DGND@12" pad="12"/>
+<connect gate="G$1" pin="DGND@14" pad="14"/>
+<connect gate="G$1" pin="DGND@15" pad="15"/>
+<connect gate="G$1" pin="DGND@18" pad="18"/>
+<connect gate="G$1" pin="DGND@21" pad="21"/>
+<connect gate="G$1" pin="DGND@24" pad="24"/>
+<connect gate="G$1" pin="DGND@26" pad="26"/>
+<connect gate="G$1" pin="DGND@29" pad="29"/>
+<connect gate="G$1" pin="DGND@6" pad="6"/>
+<connect gate="G$1" pin="DOVDD" pad="28"/>
+<connect gate="G$1" pin="ID" pad="30"/>
+<connect gate="G$1" pin="MCN" pad="20"/>
+<connect gate="G$1" pin="MCP" pad="19"/>
+<connect gate="G$1" pin="MDN1" pad="23"/>
+<connect gate="G$1" pin="MDN2" pad="17"/>
+<connect gate="G$1" pin="MDP1" pad="22"/>
+<connect gate="G$1" pin="MDP2" pad="16"/>
 <connect gate="G$1" pin="MOUNT" pad="M@1 M@2 M@3 M@4"/>
-<connect gate="G$1" pin="PWDN" pad="24"/>
-<connect gate="G$1" pin="SIOC" pad="27"/>
-<connect gate="G$1" pin="SIOD" pad="4"/>
-<connect gate="G$1" pin="STROBE" pad="30"/>
-<connect gate="G$1" pin="XCLK" pad="18"/>
+<connect gate="G$1" pin="PWDN" pad="13"/>
+<connect gate="G$1" pin="SIOC" pad="7"/>
+<connect gate="G$1" pin="SIOD" pad="8"/>
+<connect gate="G$1" pin="STROBE" pad="1"/>
+<connect gate="G$1" pin="XCLK" pad="25"/>
 </connects>
 <technologies>
 <technology name="">

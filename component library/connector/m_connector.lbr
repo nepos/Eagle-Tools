@@ -3132,30 +3132,30 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/1040912020_PCB_HEA
 <description>&lt;h3&gt;ATOM USB 3.1 24P Female SMT USB-C Receptacle&lt;/h3&gt;
 &lt;p&gt;Based on data from ATOM-A02960 drawing, rev A&lt;/p&gt;
 &lt;p&gt;Updated 2017-03-29&lt;/p&gt;</description>
-<smd name="A1" x="-2.75" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="A2" x="-2.25" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="A3" x="-1.75" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="A4" x="-1.25" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="A5" x="-0.75" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="A6" x="-0.25" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="A7" x="0.25" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="A8" x="0.75" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="A9" x="1.25" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="A10" x="1.75" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="A11" x="2.25" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="A12" x="2.75" y="4.63" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B12" x="-3" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B11" x="-2.5" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B10" x="-2" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B9" x="-1.5" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B8" x="-1" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B7" x="-0.5" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B6" x="0.5" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B5" x="1" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B4" x="1.5" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B3" x="2" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B2" x="2.5" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
-<smd name="B1" x="3" y="3.43" dx="0.3" dy="0.6" layer="1" roundness="20"/>
+<smd name="A1" x="-2.75" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="A2" x="-2.25" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="A3" x="-1.75" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="A4" x="-1.25" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="A5" x="-0.75" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="A6" x="-0.25" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="A7" x="0.25" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="A8" x="0.75" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="A9" x="1.25" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="A10" x="1.75" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="A11" x="2.25" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="A12" x="2.75" y="4.63" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B12" x="-3" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B11" x="-2.5" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B10" x="-2" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B9" x="-1.5" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B8" x="-1" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B7" x="-0.5" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B6" x="0.5" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B5" x="1" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B4" x="1.5" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B3" x="2" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B2" x="2.5" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
+<smd name="B1" x="3" y="3.43" dx="0.3" dy="0.7" layer="1" roundness="20"/>
 <smd name="MOUNT6" x="4.55" y="4.23" dx="0.9" dy="1.8" layer="1" roundness="100" thermals="no"/>
 <smd name="MOUNT3" x="-4.55" y="4.23" dx="0.9" dy="1.8" layer="1" roundness="100" thermals="no"/>
 <smd name="MOUNT5" x="4.26" y="3.795" dx="1.5" dy="1" layer="1" roundness="100" thermals="no"/>

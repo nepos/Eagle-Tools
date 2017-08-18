@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -258,6 +258,39 @@
 <text x="-4.2" y="8.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-4.5" y="-9.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="T1655-2">
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<smd name="14" x="0.4" y="2.3" dx="0.3" dy="0.4" layer="1"/>
+<smd name="13" x="1.2" y="2.3" dx="0.3" dy="0.4" layer="1"/>
+<smd name="15" x="-0.4" y="2.3" dx="0.3" dy="0.4" layer="1"/>
+<smd name="16" x="-1.2" y="2.3" dx="0.3" dy="0.4" layer="1"/>
+<smd name="11" x="2.3" y="0.4" dx="0.3" dy="0.4" layer="1" rot="R90"/>
+<smd name="12" x="2.3" y="1.2" dx="0.3" dy="0.4" layer="1" rot="R90"/>
+<smd name="10" x="2.3" y="-0.4" dx="0.3" dy="0.4" layer="1" rot="R90"/>
+<smd name="9" x="2.3" y="-1.2" dx="0.3" dy="0.4" layer="1" rot="R90"/>
+<smd name="7" x="0.4" y="-2.3" dx="0.3" dy="0.4" layer="1" rot="R180"/>
+<smd name="8" x="1.2" y="-2.3" dx="0.3" dy="0.4" layer="1" rot="R180"/>
+<smd name="6" x="-0.4" y="-2.3" dx="0.3" dy="0.4" layer="1" rot="R180"/>
+<smd name="5" x="-1.2" y="-2.3" dx="0.3" dy="0.4" layer="1" rot="R180"/>
+<smd name="3" x="-2.3" y="-0.4" dx="0.3" dy="0.4" layer="1" rot="R270"/>
+<smd name="4" x="-2.3" y="-1.2" dx="0.3" dy="0.4" layer="1" rot="R270"/>
+<smd name="2" x="-2.3" y="0.4" dx="0.3" dy="0.4" layer="1" rot="R270"/>
+<smd name="1" x="-2.3" y="1.2" dx="0.3" dy="0.4" layer="1" rot="R270"/>
+<smd name="PAD" x="0" y="0" dx="3.1" dy="3.1" layer="1" thermals="no" cream="no"/>
+<circle x="-2" y="2" radius="0.22360625" width="0.127" layer="21"/>
+<text x="-2.2" y="-3.9" size="1.016" layer="25">&gt;NAME</text>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="39"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="39"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="39"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="39"/>
+<rectangle x1="-1.5" y1="0.3" x2="-0.3" y2="1.5" layer="31"/>
+<rectangle x1="0.3" y1="0.3" x2="1.5" y2="1.5" layer="31"/>
+<rectangle x1="0.3" y1="-1.5" x2="1.5" y2="-0.3" layer="31"/>
+<rectangle x1="-1.5" y1="-1.5" x2="-0.3" y2="-0.3" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SPEAKER">
@@ -358,6 +391,30 @@
 <wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <text x="-15.24" y="10.16" size="1.27" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MAX9715">
+<pin name="PGND@1" x="-2.54" y="-25.4" length="middle" rot="R90"/>
+<pin name="OUTL+" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="OUTL-" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="PVDD@4" x="0" y="22.86" length="middle" rot="R270"/>
+<pin name="GAIN" x="-25.4" y="-5.08" length="middle"/>
+<pin name="GND@7" x="2.54" y="-25.4" length="middle" rot="R90"/>
+<pin name="!SHDN" x="-25.4" y="-7.62" length="middle"/>
+<pin name="PVDD@9" x="2.54" y="22.86" length="middle" rot="R270"/>
+<pin name="OUTR-" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="OUTR+" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="PGND@12" x="0" y="-25.4" length="middle" rot="R90"/>
+<pin name="BIAS" x="-25.4" y="-10.16" length="middle"/>
+<pin name="VDD" x="-2.54" y="22.86" length="middle" rot="R270"/>
+<pin name="INR" x="-25.4" y="5.08" length="middle"/>
+<pin name="INL" x="-25.4" y="7.62" length="middle"/>
+<pin name="PAD" x="5.08" y="-25.4" length="middle" rot="R90"/>
+<wire x1="-20.32" y1="17.78" x2="20.32" y2="17.78" width="0.254" layer="94"/>
+<wire x1="20.32" y1="17.78" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-20.32" x2="-20.32" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-20.32" x2="-20.32" y2="17.78" width="0.254" layer="94"/>
+<text x="-20.32" y="-22.86" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -508,6 +565,56 @@ See http://www.ti.com/lit/ds/symlink/lm4666.pdf</description>
 <technology name="">
 <attribute name="MANUF" value="ESS"/>
 <attribute name="PARTNUM" value="YD1609" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX9715" prefix="U">
+<description>The MAX9715 high-efficiency, stereo, Class D audio
+power amplifier provides up to 2.8W per channel into a
+4Ω speaker with a 5V supply. Maxim’s second-generation
+Class D technology features robust output protection,
+high efficiency, and high power-supply rejection (PSRR)
+while eliminating the need for output filters. Selectable
+gain settings, +10.5dB or +9.0dB, adjust the amplifier
+gain to suit the audio input level and speaker load.
+&lt;br&gt;
+The MAX9715 features high PSRR (71dB at 1kHz),
+allowing for operation from noisy supplies without additional
+regulation. Comprehensive click-and-pop suppression
+eliminates audible clicks and pops at startup
+and shutdown. The MAX9715 operates from a single 5V
+supply and consumes only 12mA of supply current.
+Integrated shutdown control reduces supply current to
+less than 100nA.</description>
+<gates>
+<gate name="G$1" symbol="MAX9715" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TQFN" package="T1655-2">
+<connects>
+<connect gate="G$1" pin="!SHDN" pad="8"/>
+<connect gate="G$1" pin="BIAS" pad="13"/>
+<connect gate="G$1" pin="GAIN" pad="6"/>
+<connect gate="G$1" pin="GND@7" pad="7"/>
+<connect gate="G$1" pin="INL" pad="16"/>
+<connect gate="G$1" pin="INR" pad="15"/>
+<connect gate="G$1" pin="OUTL+" pad="2"/>
+<connect gate="G$1" pin="OUTL-" pad="3"/>
+<connect gate="G$1" pin="OUTR+" pad="11"/>
+<connect gate="G$1" pin="OUTR-" pad="10"/>
+<connect gate="G$1" pin="PAD" pad="PAD"/>
+<connect gate="G$1" pin="PGND@1" pad="1"/>
+<connect gate="G$1" pin="PGND@12" pad="12"/>
+<connect gate="G$1" pin="PVDD@4" pad="4"/>
+<connect gate="G$1" pin="PVDD@9" pad="9"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUF" value="Maxim"/>
+<attribute name="PARTNUM" value="MAX9715ETE+" constant="no"/>
 </technology>
 </technologies>
 </device>

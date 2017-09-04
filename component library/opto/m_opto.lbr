@@ -2538,7 +2538,7 @@ http://www.osram-os.com/Graphics/XPic9/00134830_0.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SFH3710-3/4">
+<deviceset name="SFH3710-3/4" prefix="PHOTO_TRANSISTOR">
 <gates>
 <gate name="G$1" symbol="SFH3710-3/4" x="0" y="0"/>
 </gates>

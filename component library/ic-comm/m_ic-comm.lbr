@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -859,6 +860,53 @@ Source: &lt;a href="http://www.st.com/stonline/products/literature/ds/14771/stm8
 <rectangle x1="0.3" y1="0.1125" x2="0.8" y2="0.2875" layer="51" rot="R180"/>
 <rectangle x1="0.3" y1="-0.2875" x2="0.8" y2="-0.1125" layer="51" rot="R180"/>
 </package>
+<package name="WQFN14">
+<smd name="1" x="-1.215" y="-0.5" dx="0.3" dy="0.58" layer="1" rot="R90"/>
+<smd name="2" x="-1.215" y="0" dx="0.3" dy="0.58" layer="1" rot="R90"/>
+<smd name="3" x="-1.215" y="0.5" dx="0.3" dy="0.58" layer="1" rot="R90"/>
+<smd name="4" x="-0.75" y="1.215" dx="0.3" dy="0.58" layer="1" rot="R180"/>
+<smd name="5" x="-0.25" y="1.215" dx="0.3" dy="0.58" layer="1" rot="R180"/>
+<smd name="6" x="0.25" y="1.215" dx="0.3" dy="0.58" layer="1" rot="R180"/>
+<smd name="7" x="0.75" y="1.215" dx="0.3" dy="0.58" layer="1" rot="R180"/>
+<smd name="8" x="1.215" y="0.5" dx="0.3" dy="0.58" layer="1" rot="R270"/>
+<smd name="9" x="1.215" y="0" dx="0.3" dy="0.58" layer="1" rot="R270"/>
+<smd name="10" x="1.215" y="-0.5" dx="0.3" dy="0.58" layer="1" rot="R270"/>
+<smd name="11" x="0.75" y="-1.215" dx="0.3" dy="0.58" layer="1"/>
+<smd name="12" x="0.25" y="-1.215" dx="0.3" dy="0.58" layer="1"/>
+<smd name="13" x="-0.25" y="-1.215" dx="0.3" dy="0.58" layer="1"/>
+<smd name="14" x="-0.75" y="-1.215" dx="0.3" dy="0.58" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="1.45" dy="1.45" layer="1"/>
+<polygon width="0.127" layer="39">
+<vertex x="-1.6" y="1.6"/>
+<vertex x="1.6" y="1.6"/>
+<vertex x="1.6" y="-1.6"/>
+<vertex x="-1.6" y="-1.6"/>
+</polygon>
+<text x="-1.1" y="-2.9" size="1.016" layer="25">&gt;NAME</text>
+</package>
+<package name="WLCSP9">
+<smd name="A1" x="-0.4" y="0.4" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="A2" x="0" y="0.4" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="A3" x="0.4" y="0.4" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="B1" x="-0.4" y="0" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="B2" x="0" y="0" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="B3" x="0.4" y="0" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="C1" x="-0.4" y="-0.4" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="C2" x="0" y="-0.4" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="C3" x="0.4" y="-0.4" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<wire x1="-0.7" y1="0.7" x2="0.7" y2="0.7" width="0.127" layer="21"/>
+<wire x1="0.7" y1="0.7" x2="0.7" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="0.7" y1="-0.7" x2="-0.7" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-0.7" x2="-0.7" y2="0.7" width="0.127" layer="21"/>
+<circle x="-0.4" y="0.4" radius="0.1" width="0.127" layer="21"/>
+<polygon width="0.127" layer="39">
+<vertex x="-0.7" y="0.7"/>
+<vertex x="0.7" y="0.7"/>
+<vertex x="0.7" y="-0.7"/>
+<vertex x="-0.7" y="-0.7"/>
+</polygon>
+<text x="-0.6" y="-1.9" size="1.016" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MAX3420E">
@@ -1156,6 +1204,23 @@ Source: &lt;a href="http://www.st.com/stonline/products/literature/ds/14771/stm8
 <wire x1="-12.7" y1="-12.7" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
 <text x="-12.7" y="12.7" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
 <text x="-12.7" y="-15.24" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="FUSB302B">
+<pin name="CC1" x="-15.24" y="0" length="short"/>
+<pin name="CC2" x="-15.24" y="-2.54" length="short"/>
+<pin name="VDD" x="0" y="17.78" length="short" rot="R270"/>
+<pin name="GND" x="0" y="-15.24" length="short" rot="R90"/>
+<pin name="!INT" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="VCONN" x="2.54" y="17.78" length="short" rot="R270"/>
+<pin name="SCL" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="SDA" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="VBUS" x="-15.24" y="5.08" length="short"/>
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<text x="2.54" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1735,6 +1800,62 @@ and 4 tags.</description>
 <technology name="">
 <attribute name="MANUF" value="TI" constant="no"/>
 <attribute name="PARTNUM" value="TUSB321RWBR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSB302B" prefix="U">
+<description>&lt;b&gt;FUSB302B Programmable USB Type‐C Controller w/PD&lt;/b&gt;
+&lt;br&gt;
+The FUSB302B targets system designers looking to implement
+a DRP/SRC/SNK USB Type-C connector with low amount of
+programmability.
+&lt;br&gt;
+The FUSB302B enables the USB Type-C detection including
+attach, and orientation. The FUSB302B integrates the physical layer
+of the USB BMC power delivery protocol to allow up to 100 W of
+power and role swap. The BMC PD block enables full support for
+alternative interfaces of the Type-C specification.</description>
+<gates>
+<gate name="G$1" symbol="FUSB302B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="567TN" package="WLCSP9">
+<connects>
+<connect gate="G$1" pin="!INT" pad="B2"/>
+<connect gate="G$1" pin="CC1" pad="C1"/>
+<connect gate="G$1" pin="CC2" pad="A1"/>
+<connect gate="G$1" pin="GND" pad="C2"/>
+<connect gate="G$1" pin="SCL" pad="B3"/>
+<connect gate="G$1" pin="SDA" pad="C3"/>
+<connect gate="G$1" pin="VBUS" pad="A2"/>
+<connect gate="G$1" pin="VCONN" pad="B1"/>
+<connect gate="G$1" pin="VDD" pad="A3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUF" value="ONSemi"/>
+<attribute name="PARTNUM" value="FUSB302BUCX" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="510BR" package="WQFN14">
+<connects>
+<connect gate="G$1" pin="!INT" pad="5"/>
+<connect gate="G$1" pin="CC1" pad="10 11"/>
+<connect gate="G$1" pin="CC2" pad="1 14"/>
+<connect gate="G$1" pin="GND" pad="8 9 PAD"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="7"/>
+<connect gate="G$1" pin="VBUS" pad="2"/>
+<connect gate="G$1" pin="VCONN" pad="12 13"/>
+<connect gate="G$1" pin="VDD" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUF" value="ONSemi"/>
+<attribute name="PARTNUM" value="FUSB302BMPX" constant="no"/>
 </technology>
 </technologies>
 </device>

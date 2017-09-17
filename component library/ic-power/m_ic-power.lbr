@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -777,6 +778,19 @@ NS Package M08A</description>
 <text x="5.08" y="-22.86" size="1.27" layer="95">&gt;NAME</text>
 <text x="7.62" y="22.86" size="1.27" layer="96" rot="R180">&gt;VALUE</text>
 </symbol>
+<symbol name="NCP346">
+<pin name="OUT" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="GND" x="0" y="-12.7" length="short" rot="R90"/>
+<pin name="CNTRL" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="IN" x="-12.7" y="2.54" length="short"/>
+<pin name="VCC" x="0" y="12.7" length="short" rot="R270"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="2.54" y="-12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="IR2101S" prefix="IC" uservalue="yes">
@@ -1377,6 +1391,44 @@ http://www.ti.com/product/TLC59108/datasheet</description>
 <technology name="">
 <attribute name="MANUF" value="TI"/>
 <attribute name="PARTNUM" value="TLC59108IRGYR"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NCP346" prefix="U">
+<description>The NCP346 Overvoltage Protection circuit (OVP) protects
+sensitive electronic circuitry from overvoltage transients and power
+supply faults when used in conjunction with an external P−channel
+FET. The device is designed to sense an overvoltage condition and
+quickly disconnect the input voltage supply from the load before any
+damage can occur. The OVP consists of a precise voltage reference, a
+comparator with hysteresis, control logic, and a MOSFET gate driver.
+The OVP is designed on a robust BiCMOS process and is intended to
+withstand voltage transients up to 30 V.
+&lt;br&gt;
+The device is optimized for applications that have an external
+AC/DC adapter or car accessory charger to power the product and/or
+recharge the internal batteries. The nominal overvoltage thresholds are
+4.45 and 5.5 V and can be adjusted upward with a resistor divider
+between the VCC, IN, and GND pins. It is suitable for single cell
+Li−Ion applications as well as 3/4 cell NiCD/NiMH applications.</description>
+<gates>
+<gate name="G$1" symbol="NCP346" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="CNTRL" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUF" value="ONSemi"/>
+<attribute name="PARTNUM" value="NCP346SN2" constant="no"/>
 </technology>
 </technologies>
 </device>

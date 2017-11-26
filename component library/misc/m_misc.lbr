@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2522,6 +2523,19 @@ grid 2.54 mm</description>
 <smd name="X" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
 <circle x="0" y="0" radius="0.5" width="1" layer="29"/>
 <circle x="0" y="0" radius="0.5" width="1" layer="41"/>
+</package>
+<package name="SEIKO-FC-12M">
+<smd name="2" x="0.75" y="0" dx="0.7" dy="1.4" layer="1"/>
+<smd name="1" x="-0.75" y="0" dx="0.7" dy="1.4" layer="1"/>
+<wire x1="-1.05" y1="0.6" x2="1.05" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.05" y1="0.6" x2="1.05" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="1.05" y1="-0.6" x2="-1.05" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-1.05" y1="-0.6" x2="-1.05" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.15" y1="0.75" x2="1.15" y2="0.75" width="0.127" layer="39"/>
+<wire x1="1.15" y1="0.75" x2="1.15" y2="-0.75" width="0.127" layer="39"/>
+<wire x1="1.15" y1="-0.75" x2="-1.15" y2="-0.75" width="0.127" layer="39"/>
+<wire x1="-1.15" y1="-0.75" x2="-1.15" y2="0.75" width="0.127" layer="39"/>
+<text x="-0.9" y="-2.15" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -6362,6 +6376,29 @@ NFM18PS Series (0603 Size)</description>
 <device name="1MM" package="MARK-1MM">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SEIKO-FC-12M" prefix="X" uservalue="yes">
+<description>kHz RANGE CRYSTAL UNIT
+
+&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/137/C-12M_en-932929.pdf"&gt;http://www.mouser.com/ds/2/137/C-12M_en-932929.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL-2PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SEIKO-FC-12M">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUF" value="SEIKO EPSON" constant="no"/>
+<attribute name="PARTNUM" value="FC-12M 32.7680KA-A3" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

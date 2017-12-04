@@ -967,7 +967,7 @@ D2PAK TO252</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MSS2P" prefix="D" uservalue="yes">
+<deviceset name="PD3S230HQ-7" prefix="D" uservalue="yes">
 <description>&lt;h3&gt;Surface Mount Schottky Barrier Rectifiers&lt;/h3&gt;
 &lt;table&gt;
 &lt;tr&gt;&lt;td colspan="2"&gt;PRIMARY CHARACTERISTICS&lt;/td&gt;&lt;/tr&gt;
@@ -988,8 +988,8 @@ D2PAK TO252</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MANUF" value="Vishay" constant="no"/>
-<attribute name="PARTNUM" value="MSS2Px" constant="no"/>
+<attribute name="MANUF" value="Diodes Incorporated" constant="no"/>
+<attribute name="PARTNUM" value="PD3S230HQ-7" constant="no"/>
 </technology>
 </technologies>
 </device>

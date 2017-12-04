@@ -302,7 +302,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="THERMISTOR">
+<deviceset name="THERMISTOR" prefix="R">
 <gates>
 <gate name="G$1" symbol="THERMISTOR" x="0" y="0"/>
 </gates>
@@ -313,7 +313,10 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUF" value="Vishay" constant="no"/>
+<attribute name="PARTNUM" value="NTCS0402E3103JLT" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

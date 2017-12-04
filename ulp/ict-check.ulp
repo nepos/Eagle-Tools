@@ -1,0 +1,34 @@
+if (!board) {
+	dlgMessageBox("You must run this ULP from an open board design.");
+	exit(-1);
+}
+
+string SignalList[];
+
+board(B) {
+	int index = 0;
+	B.signals(S) {
+		if (strsub(S.name, 0, 2) == "N$")
+			continue;
+
+		int viaCount = 0;
+		S.vias(V)
+			viaCount++;
+
+		int contacts = 0;
+		S.contactrefs(C)
+			contacts++;
+
+		if (viaCount == 0 && contacts > 1)
+			SignalList[index++] = S.name;
+	}
+}
+
+dlgDialog("Results") {
+	dlgVBoxLayout {
+		int Selected = -1;
+		dlgLabel("Signals without vias");
+		dlgListBox(SignalList, Selected)
+			exit("SHOW " + SignalList[Selected]);
+	}
+};

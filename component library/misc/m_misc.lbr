@@ -2558,8 +2558,8 @@ grid 2.54 mm</description>
 <package name="DLW5ATN_MQ2">
 <smd name="1" x="-1.2" y="1.5" dx="1.7" dy="1.5" layer="1" rot="R90" cream="no"/>
 <smd name="2" x="1.2" y="1.5" dx="1.7" dy="1.5" layer="1" rot="R90" cream="no"/>
-<smd name="4" x="1.2" y="-1.5" dx="1.7" dy="1.5" layer="1" rot="R90" cream="no"/>
-<smd name="3" x="-1.2" y="-1.5" dx="1.7" dy="1.5" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="-1.2" y="-1.5" dx="1.7" dy="1.5" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="1.2" y="-1.5" dx="1.7" dy="1.5" layer="1" rot="R90" cream="no"/>
 <wire x1="-1.75" y1="2.45" x2="-1.75" y2="2.7" width="0.1" layer="21"/>
 <wire x1="-1.75" y1="2.7" x2="1.75" y2="2.7" width="0.1" layer="21"/>
 <wire x1="1.75" y1="2.7" x2="1.75" y2="2.45" width="0.1" layer="21"/>

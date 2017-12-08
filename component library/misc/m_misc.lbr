@@ -6502,7 +6502,7 @@ Series</description>
 <technologies>
 <technology name="">
 <attribute name="MANUF" value="Murata" constant="no"/>
-<attribute name="PARTNUM" value="DLW5AT151MQ2" constant="no"/>
+<attribute name="PARTNUM" value="DLW5ATN151MQ2" constant="no"/>
 </technology>
 </technologies>
 </device>

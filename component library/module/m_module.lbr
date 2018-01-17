@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.2">
+<eagle version="8.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1264,6 +1264,19 @@
 <vertex x="63.9" y="-68.25"/>
 </polygon>
 </package>
+<package name="NEPOS-E485795CH-2P1S-R01">
+<wire x1="0" y1="0" x2="90" y2="0" width="0.254" layer="21"/>
+<wire x1="90" y1="0" x2="105" y2="0" width="0.254" layer="21"/>
+<wire x1="105" y1="0" x2="195" y2="0" width="0.254" layer="21"/>
+<wire x1="195" y1="0" x2="195" y2="57" width="0.254" layer="21"/>
+<wire x1="195" y1="57" x2="105" y2="57" width="0.254" layer="21"/>
+<wire x1="105" y1="57" x2="90" y2="57" width="0.254" layer="21"/>
+<wire x1="90" y1="57" x2="0" y2="57" width="0.254" layer="21"/>
+<wire x1="0" y1="57" x2="0" y2="0" width="0.254" layer="21"/>
+<wire x1="90" y1="0" x2="90" y2="57" width="0.254" layer="21"/>
+<wire x1="105" y1="0" x2="105" y2="57" width="0.254" layer="21"/>
+<rectangle x1="94.5" y1="57" x2="100.5" y2="72" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="GPS-MODULE">
@@ -1578,6 +1591,19 @@
 <wire x1="-17.78" y1="-10.16" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
 <text x="-7.62" y="-2.54" size="2.54" layer="94">DISPLAY
 TOUCH</text>
+</symbol>
+<symbol name="AMPRIUS_NEPOS-E485795CH-2P1S-R01">
+<wire x1="0" y1="0" x2="24" y2="0" width="0.254" layer="94"/>
+<wire x1="24" y1="0" x2="24" y2="17" width="0.254" layer="94"/>
+<wire x1="24" y1="17" x2="0" y2="17" width="0.254" layer="94"/>
+<wire x1="0" y1="17" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="3" y1="8" x2="12" y2="8" width="0.254" layer="94"/>
+<wire x1="12" y1="8" x2="12" y2="14" width="0.254" layer="94"/>
+<wire x1="12" y1="14" x2="12" y2="2" width="0.254" layer="94"/>
+<wire x1="14" y1="12" x2="14" y2="8" width="0.254" layer="94"/>
+<wire x1="14" y1="8" x2="14" y2="4" width="0.254" layer="94"/>
+<wire x1="14" y1="8" x2="20" y2="8" width="0.254" layer="94"/>
+<text x="0" y="-2.54" size="1.27" layer="94">Amprius Battery</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2007,6 +2033,21 @@ Bluetooth:
 <device name="" package="ADMATEC-10.1-FT5626-180DEG">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NEPOS-E485795CH-2P1S-R01">
+<gates>
+<gate name="G$1" symbol="AMPRIUS_NEPOS-E485795CH-2P1S-R01" x="-12.7" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="NEPOS-E485795CH-2P1S-R01">
+<technologies>
+<technology name="">
+<attribute name="MANUF" value="Amprius" constant="no"/>
+<attribute name="PARTNUM" value="NEPOS-E485795CH-2P1S-R01" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

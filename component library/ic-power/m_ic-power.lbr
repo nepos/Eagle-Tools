@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
@@ -52,6 +64,13 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="t3D" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="b3D" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -60,16 +79,81 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="battery-connector" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="218" name="218bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="219" name="219bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="220" name="220bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="221" name="221bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="223" name="223bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="224" name="224bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;h3&gt;Power Electronics ICs&lt;/h3&gt;
@@ -493,31 +577,31 @@ NS Package M08A</description>
 <rectangle x1="-2.975" y1="-3.3" x2="-2.875" y2="-2.25" layer="51"/>
 </package>
 <package name="R-PVQFN-N20">
-<smd name="9" x="-1.75" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="8" x="-1.25" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="7" x="-0.75" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="6" x="-0.25" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="5" x="0.25" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="4" x="0.75" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="3" x="1.25" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="2" x="1.75" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="12" x="-1.75" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="13" x="-1.25" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="14" x="-0.75" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="15" x="-0.25" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="16" x="0.25" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="17" x="0.75" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="18" x="1.25" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="19" x="1.75" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90"/>
-<smd name="20" x="2.25" y="-0.75" dx="0.8" dy="0.23" layer="1" rot="R180"/>
-<smd name="1" x="2.25" y="0.75" dx="0.8" dy="0.23" layer="1" rot="R180"/>
-<smd name="10" x="-2.25" y="0.75" dx="0.8" dy="0.23" layer="1" rot="R180"/>
-<smd name="11" x="-2.25" y="-0.75" dx="0.8" dy="0.23" layer="1" rot="R180"/>
-<wire x1="-2.25" y1="1.75" x2="2.25" y2="1.75" width="0.127" layer="21"/>
-<wire x1="2.25" y1="1.75" x2="2.25" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="2.25" y1="-1.75" x2="-2.25" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="-2.25" y1="-1.75" x2="-2.25" y2="1.75" width="0.127" layer="21"/>
-<circle x="1.65" y="1.15" radius="0.26925625" width="0.127" layer="21"/>
+<smd name="9" x="-1.75" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="8" x="-1.25" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="7" x="-0.75" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="-0.25" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="0.25" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="0.75" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="1.25" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="1.75" y="1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="12" x="-1.75" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="13" x="-1.25" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="14" x="-0.75" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="15" x="-0.25" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="16" x="0.25" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="17" x="0.75" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="18" x="1.25" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="19" x="1.75" y="-1.75" dx="0.8" dy="0.23" layer="1" rot="R90" cream="no"/>
+<smd name="20" x="2.25" y="-0.75" dx="0.8" dy="0.23" layer="1" rot="R180" cream="no"/>
+<smd name="1" x="2.25" y="0.75" dx="0.8" dy="0.23" layer="1" rot="R180" cream="no"/>
+<smd name="10" x="-2.25" y="0.75" dx="0.8" dy="0.23" layer="1" rot="R180" cream="no"/>
+<smd name="11" x="-2.25" y="-0.75" dx="0.8" dy="0.23" layer="1" rot="R180" cream="no"/>
+<wire x1="-2.85" y1="2.35" x2="2.85" y2="2.35" width="0.127" layer="21"/>
+<wire x1="2.85" y1="2.35" x2="2.85" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="2.85" y1="-2.35" x2="-2.85" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-2.85" y1="-2.35" x2="-2.85" y2="2.35" width="0.127" layer="21"/>
+<circle x="2.45" y="1.95" radius="0.26925625" width="0.127" layer="21"/>
 <polygon width="0.127" layer="39">
 <vertex x="-2.65" y="2.15"/>
 <vertex x="2.65" y="2.15"/>
@@ -525,7 +609,7 @@ NS Package M08A</description>
 <vertex x="-2.65" y="-2.15"/>
 </polygon>
 <smd name="PAD" x="0" y="0" dx="3.05" dy="2.05" layer="1" stop="no" cream="no"/>
-<text x="-1.95" y="-1.45" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.85" y="-3.25" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 <rectangle x1="0.23" y1="-1.03" x2="1.53" y2="-0.23" layer="31"/>
 <rectangle x1="0.23" y1="-1.03" x2="1.53" y2="-0.23" layer="29"/>
 <rectangle x1="-1.53" y1="0.23" x2="-0.23" y2="1.03" layer="31"/>
@@ -534,6 +618,26 @@ NS Package M08A</description>
 <rectangle x1="0.23" y1="0.23" x2="1.53" y2="1.03" layer="29"/>
 <rectangle x1="-1.53" y1="-1.03" x2="-0.23" y2="-0.23" layer="31"/>
 <rectangle x1="-1.53" y1="-1.03" x2="-0.23" y2="-0.23" layer="29"/>
+<rectangle x1="-1.85" y1="-2.1" x2="-1.65" y2="-1.4" layer="31"/>
+<rectangle x1="-1.35" y1="-2.1" x2="-1.15" y2="-1.4" layer="31"/>
+<rectangle x1="-0.85" y1="-2.1" x2="-0.65" y2="-1.4" layer="31"/>
+<rectangle x1="-0.35" y1="-2.1" x2="-0.15" y2="-1.4" layer="31"/>
+<rectangle x1="0.15" y1="-2.1" x2="0.35" y2="-1.4" layer="31"/>
+<rectangle x1="0.65" y1="-2.1" x2="0.85" y2="-1.4" layer="31"/>
+<rectangle x1="1.15" y1="-2.1" x2="1.35" y2="-1.4" layer="31"/>
+<rectangle x1="1.65" y1="-2.1" x2="1.85" y2="-1.4" layer="31"/>
+<rectangle x1="2.15" y1="-1.1" x2="2.35" y2="-0.4" layer="31" rot="R90"/>
+<rectangle x1="2.15" y1="0.4" x2="2.35" y2="1.1" layer="31" rot="R90"/>
+<rectangle x1="-2.35" y1="0.4" x2="-2.15" y2="1.1" layer="31" rot="R270"/>
+<rectangle x1="-2.35" y1="-1.1" x2="-2.15" y2="-0.4" layer="31" rot="R270"/>
+<rectangle x1="-1.85" y1="1.4" x2="-1.65" y2="2.1" layer="31" rot="R180"/>
+<rectangle x1="-1.35" y1="1.4" x2="-1.15" y2="2.1" layer="31" rot="R180"/>
+<rectangle x1="-0.85" y1="1.4" x2="-0.65" y2="2.1" layer="31" rot="R180"/>
+<rectangle x1="-0.35" y1="1.4" x2="-0.15" y2="2.1" layer="31" rot="R180"/>
+<rectangle x1="0.15" y1="1.4" x2="0.35" y2="2.1" layer="31" rot="R180"/>
+<rectangle x1="0.65" y1="1.4" x2="0.85" y2="2.1" layer="31" rot="R180"/>
+<rectangle x1="1.15" y1="1.4" x2="1.35" y2="2.1" layer="31" rot="R180"/>
+<rectangle x1="1.65" y1="1.4" x2="1.85" y2="2.1" layer="31" rot="R180"/>
 </package>
 <package name="WLCSP-12">
 <smd name="A1" x="-0.6" y="0.4" dx="0.215" dy="0.215" layer="1" roundness="100"/>
@@ -560,6 +664,96 @@ NS Package M08A</description>
 <wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.127" layer="39"/>
 <wire x1="-1" y1="-0.7" x2="-1" y2="0.7" width="0.127" layer="39"/>
 <text x="-0.1" y="1" size="1.27" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="S-PWQFN-N32">
+<description>&lt;h3&gt;S-PWQFN-N32 (RSN) Package&lt;/h3&gt;
+&lt;div&gt;&lt;img src="https://sigma.octopart.com/82288749/image/Texas-Instruments-BQ25703ARSNT.jpg" /&gt;&lt;/div&gt;
+&lt;p&gt;Based on TI drawing 4207873/F 03/14&lt;/p&gt;
+&lt;p&gt;Added 2017-06-28&lt;/p&gt;
+&lt;p&gt;Note: suggested 0.05mm soldermask clearance. 0.125mm paste stencil or thinner. Use 9x 0.3mm thermal vias.&lt;/p&gt;</description>
+<wire x1="-2.7" y1="-2.7" x2="2.7" y2="-2.7" width="0.1524" layer="51"/>
+<wire x1="-2.7" y1="2.7" x2="2.7" y2="2.7" width="0.1524" layer="51"/>
+<wire x1="2.7" y1="-2.7" x2="2.7" y2="2.7" width="0.1524" layer="51"/>
+<wire x1="-2.7" y1="-2.7" x2="-2.7" y2="2.7" width="0.1524" layer="51"/>
+<wire x1="-1.9994" y1="2.197" x2="-2.4058" y2="2.197" width="0.1016" layer="21" curve="-180"/>
+<wire x1="-2.4058" y1="2.197" x2="-1.9994" y2="2.197" width="0.1016" layer="21" curve="-180"/>
+<rectangle x1="0.15" y1="0.15" x2="1.35" y2="1.35" layer="31"/>
+<rectangle x1="-1.35" y1="0.15" x2="-0.15" y2="1.35" layer="31" rot="R90"/>
+<rectangle x1="-1.35" y1="-1.35" x2="-0.15" y2="-0.15" layer="31" rot="R180"/>
+<rectangle x1="0.15" y1="-1.35" x2="1.35" y2="-0.15" layer="31" rot="R270"/>
+<smd name="1" x="-2" y="1.4" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="2" x="-2" y="1" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="3" x="-2" y="0.6" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="4" x="-2" y="0.2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="5" x="-2" y="-0.2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="6" x="-2" y="-0.6" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="7" x="-2" y="-1" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="8" x="-2" y="-1.4" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="9" x="-1.4" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="10" x="-1" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="11" x="-0.6" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="12" x="-0.2" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="13" x="0.2" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="14" x="0.6" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="15" x="1" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="16" x="1.4" y="-2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="17" x="2" y="-1.4" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="18" x="2" y="-1" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="19" x="2" y="-0.6" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="20" x="2" y="-0.2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="21" x="2" y="0.2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="22" x="2" y="0.6" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="23" x="2" y="1" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="24" x="2" y="1.4" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="25" x="1.4" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="26" x="1" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="27" x="0.6" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="28" x="0.2" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="29" x="-0.2" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="30" x="-0.6" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="31" x="-1" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="32" x="-1.4" y="2" dx="0.8" dy="0.2" layer="1" roundness="100" rot="R90" thermals="no" cream="no"/>
+<smd name="PAD" x="0" y="0" dx="2.8" dy="2.8" layer="1" thermals="no" cream="no"/>
+<text x="-2.5" y="2.85" size="1.27" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-2.5" y="-2.85" size="1.27" layer="27" font="vector" ratio="16" align="top-left">&gt;VALUE</text>
+<polygon width="0.4" layer="39">
+<vertex x="-2.5" y="2.5"/>
+<vertex x="2.5" y="2.5"/>
+<vertex x="2.5" y="-2.5"/>
+<vertex x="-2.5" y="-2.5"/>
+</polygon>
+<wire x1="-2.3" y1="1.4" x2="-1.7" y2="1.4" width="0.15" layer="31"/>
+<wire x1="-2.3" y1="1" x2="-1.7" y2="1" width="0.15" layer="31"/>
+<wire x1="-2.3" y1="0.6" x2="-1.7" y2="0.6" width="0.15" layer="31"/>
+<wire x1="-2.3" y1="0.2" x2="-1.7" y2="0.2" width="0.15" layer="31"/>
+<wire x1="-2.3" y1="-0.2" x2="-1.7" y2="-0.2" width="0.15" layer="31"/>
+<wire x1="-2.3" y1="-0.6" x2="-1.7" y2="-0.6" width="0.15" layer="31"/>
+<wire x1="-2.3" y1="-1" x2="-1.7" y2="-1" width="0.15" layer="31"/>
+<wire x1="-2.3" y1="-1.4" x2="-1.7" y2="-1.4" width="0.15" layer="31"/>
+<wire x1="-1.4" y1="-2.3" x2="-1.4" y2="-1.7" width="0.15" layer="31"/>
+<wire x1="-1" y1="-1.7" x2="-1" y2="-2.3" width="0.15" layer="31"/>
+<wire x1="-0.6" y1="-2.3" x2="-0.6" y2="-1.7" width="0.15" layer="31"/>
+<wire x1="-0.2" y1="-2.3" x2="-0.2" y2="-1.7" width="0.15" layer="31"/>
+<wire x1="0.2" y1="-2.3" x2="0.2" y2="-1.7" width="0.15" layer="31"/>
+<wire x1="0.6" y1="-2.3" x2="0.6" y2="-1.7" width="0.15" layer="31"/>
+<wire x1="1" y1="-2.3" x2="1" y2="-1.7" width="0.15" layer="31"/>
+<wire x1="1.4" y1="-2.3" x2="1.4" y2="-1.7" width="0.15" layer="31"/>
+<wire x1="2.3" y1="-1.4" x2="1.7" y2="-1.4" width="0.15" layer="31"/>
+<wire x1="1.7" y1="-1" x2="2.3" y2="-1" width="0.15" layer="31"/>
+<wire x1="1.7" y1="-0.6" x2="2.3" y2="-0.6" width="0.15" layer="31"/>
+<wire x1="2.3" y1="-0.2" x2="1.7" y2="-0.2" width="0.15" layer="31"/>
+<wire x1="1.7" y1="0.2" x2="2.3" y2="0.2" width="0.15" layer="31"/>
+<wire x1="1.7" y1="0.6" x2="2.3" y2="0.6" width="0.15" layer="31"/>
+<wire x1="2.3" y1="1" x2="1.7" y2="1" width="0.15" layer="31"/>
+<wire x1="1.7" y1="1.4" x2="2.3" y2="1.4" width="0.15" layer="31"/>
+<wire x1="1.4" y1="1.7" x2="1.4" y2="2.3" width="0.15" layer="31"/>
+<wire x1="1" y1="2.3" x2="1" y2="1.7" width="0.15" layer="31"/>
+<wire x1="0.6" y1="1.7" x2="0.6" y2="2.3" width="0.15" layer="31"/>
+<wire x1="0.2" y1="1.7" x2="0.2" y2="2.3" width="0.15" layer="31"/>
+<wire x1="-0.2" y1="2.3" x2="-0.2" y2="1.7" width="0.15" layer="31"/>
+<wire x1="-0.6" y1="1.7" x2="-0.6" y2="2.3" width="0.15" layer="31"/>
+<wire x1="-1" y1="2.3" x2="-1" y2="1.7" width="0.15" layer="31"/>
+<wire x1="-1.4" y1="1.7" x2="-1.4" y2="2.3" width="0.15" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -830,6 +1024,48 @@ NS Package M08A</description>
 <text x="5.08" y="-17.78" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="5.08" y="-20.32" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 <pin name="!EN" x="15.24" y="-5.08" length="short" rot="R180"/>
+</symbol>
+<symbol name="BQ25703A">
+<description>&lt;h3&gt;bq25703A  I2C Multi-Chemistry Battery Buck-Boost Charge Controller&lt;/h3&gt;</description>
+<wire x1="-17.78" y1="30.48" x2="17.78" y2="30.48" width="0.254" layer="94"/>
+<wire x1="17.78" y1="30.48" x2="17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-33.02" x2="-17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-33.02" x2="-17.78" y2="30.48" width="0.254" layer="94"/>
+<pin name="!BATDRV" x="20.32" y="10.16" length="short" direction="pas" rot="R180"/>
+<pin name="!PROCHOT" x="20.32" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="ACN" x="-20.32" y="10.16" length="short" direction="pas"/>
+<pin name="ACP" x="-20.32" y="7.62" length="short" direction="pas"/>
+<pin name="BTST1" x="-20.32" y="27.94" length="short" direction="pas"/>
+<pin name="BTST2" x="20.32" y="27.94" length="short" direction="pas" rot="R180"/>
+<pin name="CELL_BATPRES" x="-20.32" y="-10.16" length="short" direction="pas"/>
+<pin name="CHRG_OK" x="20.32" y="-2.54" length="short" direction="pas" rot="R180"/>
+<pin name="CMPIN" x="-20.32" y="-20.32" length="short" direction="pas"/>
+<pin name="CMPOUT" x="-20.32" y="-22.86" length="short" direction="pas"/>
+<pin name="COMP1" x="-20.32" y="-12.7" length="short" direction="pas"/>
+<pin name="COMP2" x="-20.32" y="-15.24" length="short" direction="pas"/>
+<pin name="EN_OTG" x="20.32" y="-5.08" length="short" direction="pas" rot="R180"/>
+<pin name="HIDRV1" x="-20.32" y="17.78" length="short" direction="pas"/>
+<pin name="HIDRV2" x="20.32" y="17.78" length="short" direction="pas" rot="R180"/>
+<pin name="IADPT" x="20.32" y="-20.32" length="short" direction="pas" rot="R180"/>
+<pin name="IBAT" x="20.32" y="-15.24" length="short" direction="pas" rot="R180"/>
+<pin name="ILIM_HIZ" x="-20.32" y="-7.62" length="short" direction="pas"/>
+<pin name="LODRV1" x="-20.32" y="20.32" length="short" direction="pas"/>
+<pin name="LODRV2" x="20.32" y="20.32" length="short" direction="pas" rot="R180"/>
+<pin name="PAD" x="-20.32" y="-30.48" length="short" direction="pas"/>
+<pin name="PGND" x="-20.32" y="-27.94" length="short" direction="pas"/>
+<pin name="PSYS" x="20.32" y="-17.78" length="short" direction="pas" rot="R180"/>
+<pin name="REGN" x="-20.32" y="2.54" length="short" direction="pas"/>
+<pin name="SCL" x="20.32" y="-7.62" length="short" direction="pas" rot="R180"/>
+<pin name="SDA" x="20.32" y="-10.16" length="short" direction="pas" rot="R180"/>
+<pin name="SRN" x="20.32" y="5.08" length="short" direction="pas" rot="R180"/>
+<pin name="SRP" x="20.32" y="7.62" length="short" direction="pas" rot="R180"/>
+<pin name="SW1" x="-20.32" y="25.4" length="short" direction="pas"/>
+<pin name="SW2" x="20.32" y="25.4" length="short" direction="pas" rot="R180"/>
+<pin name="VBUS" x="-20.32" y="15.24" length="short" direction="pas"/>
+<pin name="VDDA" x="-20.32" y="-2.54" length="short" direction="pas"/>
+<pin name="VSYS" x="20.32" y="15.24" length="short" direction="pas" rot="R180"/>
+<text x="-17.78" y="33.02" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="-17.78" y="-35.56" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1502,9 +1738,124 @@ The FPF2280 is available in a fully “green” compliant 1.3 mm × 1.8 mm Wafer
 <technologies>
 <technology name="">
 <attribute name="MANUF" value="OnSemi"/>
-<attribute name="PARTNUM" value="FPF2280BUCX
--
-F130" constant="no"/>
+<attribute name="PARTNUM" value="FPF2280BUCX - F130" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BQ25703A" prefix="IC" uservalue="yes">
+<description>&lt;h3&gt;bq25703A I2C Multi-Chemistry Battery Buck-Boost Charge Controller&lt;/h3&gt;
+&lt;h4&gt;Features&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Charge 1- to 4-Cell Battery From Wide Range of Input Sources
+    &lt;ul&gt;
+      &lt;li&gt;3.5-V to 24-V Input Operating Voltage&lt;/li&gt;
+      &lt;li&gt;Supports USB2.0, USB 3.0, USB 3.1 (Type C), and USB_PD Input Current Settings&lt;/li&gt;
+      &lt;li&gt;Seamless Transition Between Buck and Boost Operation&lt;/li&gt;
+      &lt;li&gt;Input Current and Voltage Regulation (IDPM and VDPM) Against Source Overload&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Power/Current Monitor for CPU Throttling
+    &lt;ul&gt;
+      &lt;li&gt;Comprehensive PROCHOT Profile, IMVP8 Compliant&lt;/li&gt;
+      &lt;li&gt;Input and Battery Current Monitor&lt;/li&gt;
+      &lt;li&gt;System Power Monitor, IMVP8 Compliant&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Narrow-VDC (NVDC) Power Path Management
+    &lt;ul&gt;
+      &lt;li&gt;Instant-On With No Battery or Deeply Discharged Battery&lt;/li&gt;
+      &lt;li&gt;Battery Supplements System When Adapter is Fully-Loaded&lt;/li&gt;
+      &lt;li&gt;Ideal Diode Operation in Supplement Mode&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Power Up USB Port From Battery (USB OTG)
+    &lt;ul&gt;
+      &lt;li&gt;Output 4.48-V to 20.8-V Compatible With USB PD&lt;/li&gt;
+      &lt;li&gt;Output Current Limit up to 6.35 A&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;800-kHz or 1.2-MHz Programmable Switching Frequency for 1-μH to 2.2-μH Low Profile Inductor&lt;/li&gt;
+  &lt;li&gt;Host Control Interface for Flexible System Configuration
+    &lt;ul&gt;
+      &lt;li&gt;I2C (bq25703A) Port for Optimal System Performance and Status Reporting&lt;/li&gt;
+      &lt;li&gt;Hardware Pin to Set Input Current Limit Without EC Control&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;High Accuracy Regulation and Monitor
+    &lt;ul&gt;
+      &lt;li&gt;±0.5% Charge Voltage Regulation&lt;/li&gt;
+      &lt;li&gt;±2% Input/Charge Current Regulation&lt;/li&gt;
+      &lt;li&gt;±2% Input/Charge Current Monitor&lt;/li&gt;
+      &lt;li&gt;±5% Power Monitor&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Safety
+    &lt;ul&gt;
+      &lt;li&gt;Thermal Shutdown&lt;/li&gt;
+      &lt;li&gt;Input, System, Battery Overvoltage Protection&lt;/li&gt;
+      &lt;li&gt;MOSFET Inductor Overcurrent Protection&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Low Battery Quiescent Current&lt;/li&gt;
+  &lt;li&gt;Input Current Optimizer (ICO) to Extract Max Input Power&lt;/li&gt;
+  &lt;li&gt;Charge Any Battery Chemistry: Li+, LiFePO4, NiCd, NiMH, Lead Acid&lt;/li&gt;
+  &lt;li&gt;Package: 32-Pin 4 × 4 WQFN&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Description&lt;/h4&gt;
+&lt;p&gt;The bq25703A is a synchronous NVDC battery buck- boost charge controller, offering low component count, high efficiency solution for space-constraint, multi-chemistry battery charging applications.&lt;/p&gt;
+&lt;p&gt;The NVDC-1 configuration allows the system to be regulated at battery voltage, but not drop below system minimum voltage. The system keeps operating even when the battery is completely discharged or removed. When load power exceeds input source rating, the battery goes into supplement mode and prevents the input source from being overloaded.&lt;/p&gt;
+&lt;p&gt;The bq25703A charges battery from a wide range of input sources including USB adapter, high voltage USB PD sources and traditional adapters.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://octopart.com/search?q=BQ25703ARSN%3F&amp;start=0"&gt;Octopart Search&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://octopart.com/click/track?ct=datasheets&amp;hlid=25228273&amp;ppid=81848930&amp;sid=370&amp;sig=0ff8797"&gt;Datasheet link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Added 2017-06-28&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="BQ25703A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="S-PWQFN-N32">
+<connects>
+<connect gate="G$1" pin="!BATDRV" pad="21"/>
+<connect gate="G$1" pin="!PROCHOT" pad="11"/>
+<connect gate="G$1" pin="ACN" pad="2"/>
+<connect gate="G$1" pin="ACP" pad="3"/>
+<connect gate="G$1" pin="BTST1" pad="30"/>
+<connect gate="G$1" pin="BTST2" pad="25"/>
+<connect gate="G$1" pin="CELL_BATPRES" pad="18"/>
+<connect gate="G$1" pin="CHRG_OK" pad="4"/>
+<connect gate="G$1" pin="CMPIN" pad="14"/>
+<connect gate="G$1" pin="CMPOUT" pad="15"/>
+<connect gate="G$1" pin="COMP1" pad="16"/>
+<connect gate="G$1" pin="COMP2" pad="17"/>
+<connect gate="G$1" pin="EN_OTG" pad="5"/>
+<connect gate="G$1" pin="HIDRV1" pad="31"/>
+<connect gate="G$1" pin="HIDRV2" pad="24"/>
+<connect gate="G$1" pin="IADPT" pad="8"/>
+<connect gate="G$1" pin="IBAT" pad="9"/>
+<connect gate="G$1" pin="ILIM_HIZ" pad="6"/>
+<connect gate="G$1" pin="LODRV1" pad="29"/>
+<connect gate="G$1" pin="LODRV2" pad="26"/>
+<connect gate="G$1" pin="PAD" pad="PAD"/>
+<connect gate="G$1" pin="PGND" pad="27"/>
+<connect gate="G$1" pin="PSYS" pad="10"/>
+<connect gate="G$1" pin="REGN" pad="28"/>
+<connect gate="G$1" pin="SCL" pad="13"/>
+<connect gate="G$1" pin="SDA" pad="12"/>
+<connect gate="G$1" pin="SRN" pad="19"/>
+<connect gate="G$1" pin="SRP" pad="20"/>
+<connect gate="G$1" pin="SW1" pad="32"/>
+<connect gate="G$1" pin="SW2" pad="23"/>
+<connect gate="G$1" pin="VBUS" pad="1"/>
+<connect gate="G$1" pin="VDDA" pad="7"/>
+<connect gate="G$1" pin="VSYS" pad="22"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUF" value="Texas Instruments" constant="no"/>
+<attribute name="PARTNUM" value="BQ25703ARSN?" constant="no"/>
+<attribute name="VALUE" value="bq25703A" constant="no"/>
 </technology>
 </technologies>
 </device>

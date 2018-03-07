@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -726,20 +726,20 @@ grid 2.54 mm</description>
 <package name="R-PVSON-N14">
 <description>&lt;h3&gt;Plastic Small Outline No-Lead 3mm x 4mm Package&lt;/h3&gt;
 &lt;p&gt;Based on TI drawings 4208212-3/C 06/11, 4208549-3/G, 04/15, 4210895-2/E, 02/16&lt;/p&gt;</description>
-<smd name="1" x="-1.5" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no"/>
-<smd name="2" x="-1" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no"/>
-<smd name="3" x="-0.5" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no"/>
-<smd name="4" x="0" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no"/>
-<smd name="5" x="0.5" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no"/>
-<smd name="6" x="1" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no"/>
-<smd name="7" x="1.5" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no"/>
-<smd name="8" x="1.5" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no"/>
-<smd name="9" x="1" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no"/>
-<smd name="10" x="0.5" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no"/>
-<smd name="11" x="0" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no"/>
-<smd name="12" x="-0.5" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no"/>
-<smd name="13" x="-1" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no"/>
-<smd name="14" x="-1.5" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no"/>
+<smd name="1" x="-1.5" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="2" x="-1" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="3" x="-0.5" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="4" x="0" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="5" x="0.5" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="6" x="1" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="7" x="1.5" y="-1.4" dx="0.24" dy="0.6" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="8" x="1.5" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="9" x="1" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="10" x="0.5" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="11" x="0" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="12" x="-0.5" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="13" x="-1" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="14" x="-1.5" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
 <smd name="PAD" x="0" y="0" dx="4.4" dy="1.58" layer="1" stop="no" thermals="no" cream="no"/>
 <rectangle x1="-1.425" y1="-0.79" x2="1.425" y2="0.79" layer="29"/>
 <rectangle x1="-2.2" y1="0.59" x2="-1.425" y2="0.79" layer="29"/>
@@ -762,32 +762,18 @@ grid 2.54 mm</description>
 <rectangle x1="-1.35" y1="-0.76" x2="-0.1" y2="-0.1" layer="31" rot="R180"/>
 <rectangle x1="0.1" y1="-0.76" x2="1.35" y2="-0.1" layer="31"/>
 <rectangle x1="-1.35" y1="0.1" x2="-0.1" y2="0.76" layer="31" rot="R180"/>
-<wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.127" layer="51"/>
-<wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="2" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-2" y1="-1.5" x2="-2" y2="1.5" width="0.127" layer="51"/>
-<wire x1="-1.8" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-2" y1="-1.5" x2="-2" y2="-0.875" width="0.127" layer="21"/>
-<wire x1="1.8" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
-<wire x1="2" y1="1.5" x2="2" y2="0.875" width="0.127" layer="21"/>
-<wire x1="1.8" y1="-1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="2" y1="-1.5" x2="2" y2="-0.875" width="0.127" layer="21"/>
-<wire x1="-1.8" y1="1.5" x2="-2" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-2" y1="1.5" x2="-2" y2="0.875" width="0.127" layer="21"/>
-<rectangle x1="-0.12" y1="1.1" x2="0.12" y2="1.5" layer="51"/>
-<rectangle x1="0.38" y1="1.1" x2="0.62" y2="1.5" layer="51"/>
-<rectangle x1="0.88" y1="1.1" x2="1.12" y2="1.5" layer="51"/>
-<rectangle x1="1.38" y1="1.1" x2="1.62" y2="1.5" layer="51"/>
-<rectangle x1="-0.62" y1="1.1" x2="-0.38" y2="1.5" layer="51"/>
-<rectangle x1="-1.12" y1="1.1" x2="-0.88" y2="1.5" layer="51"/>
-<rectangle x1="-1.62" y1="1.1" x2="-1.38" y2="1.5" layer="51"/>
-<rectangle x1="-0.12" y1="-1.5" x2="0.12" y2="-1.1" layer="51" rot="R180"/>
-<rectangle x1="-0.62" y1="-1.5" x2="-0.38" y2="-1.1" layer="51" rot="R180"/>
-<rectangle x1="-1.12" y1="-1.5" x2="-0.88" y2="-1.1" layer="51" rot="R180"/>
-<rectangle x1="-1.62" y1="-1.5" x2="-1.38" y2="-1.1" layer="51" rot="R180"/>
-<rectangle x1="0.38" y1="-1.5" x2="0.62" y2="-1.1" layer="51" rot="R180"/>
-<rectangle x1="0.88" y1="-1.5" x2="1.12" y2="-1.1" layer="51" rot="R180"/>
-<rectangle x1="1.38" y1="-1.5" x2="1.62" y2="-1.1" layer="51" rot="R180"/>
+<wire x1="-2.3" y1="1.8" x2="2.3" y2="1.8" width="0.127" layer="51"/>
+<wire x1="2.3" y1="1.8" x2="2.3" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="2.3" y1="-1.8" x2="-2.3" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="-2.3" y1="-1.8" x2="-2.3" y2="1.8" width="0.127" layer="51"/>
+<wire x1="-1.8" y1="-1.8" x2="-2.3" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-1.8" x2="-2.3" y2="-0.875" width="0.127" layer="21"/>
+<wire x1="1.8" y1="1.8" x2="2.3" y2="1.8" width="0.127" layer="21"/>
+<wire x1="2.3" y1="1.8" x2="2.3" y2="0.875" width="0.127" layer="21"/>
+<wire x1="1.8" y1="-1.8" x2="2.3" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="2.3" y1="-1.8" x2="2.3" y2="-0.875" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="1.8" x2="-2.3" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="1.8" x2="-2.3" y2="0.875" width="0.127" layer="21"/>
 <rectangle x1="-1.425" y1="-0.79" x2="1.425" y2="0.79" layer="51"/>
 <rectangle x1="1.425" y1="0.13" x2="2" y2="0.33" layer="51"/>
 <rectangle x1="1.425" y1="0.59" x2="2" y2="0.79" layer="51"/>
@@ -805,22 +791,37 @@ grid 2.54 mm</description>
 <vertex x="2.5" y="-2"/>
 <vertex x="2.5" y="2"/>
 </polygon>
-<rectangle x1="-2.0625" y1="-2.1" x2="-1.75" y2="-1.5" layer="21"/>
+<rectangle x1="-2.2625" y1="-1.8" x2="-1.95" y2="-1.2" layer="21"/>
+<rectangle x1="-1.6" y1="1.15" x2="-1.4" y2="1.65" layer="31"/>
+<rectangle x1="-1.1" y1="1.15" x2="-0.9" y2="1.65" layer="31"/>
+<rectangle x1="-0.6" y1="1.15" x2="-0.4" y2="1.65" layer="31"/>
+<rectangle x1="-0.1" y1="1.15" x2="0.1" y2="1.65" layer="31"/>
+<rectangle x1="0.4" y1="1.15" x2="0.6" y2="1.65" layer="31"/>
+<rectangle x1="0.9" y1="1.15" x2="1.1" y2="1.65" layer="31"/>
+<rectangle x1="1.4" y1="1.15" x2="1.6" y2="1.65" layer="31"/>
+<smd name="15" x="-1.5" y="1.4" dx="0.24" dy="0.6" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<rectangle x1="-1.6" y1="-1.65" x2="-1.4" y2="-1.15" layer="31"/>
+<rectangle x1="-1.1" y1="-1.65" x2="-0.9" y2="-1.15" layer="31"/>
+<rectangle x1="-0.6" y1="-1.65" x2="-0.4" y2="-1.15" layer="31"/>
+<rectangle x1="-0.1" y1="-1.65" x2="0.1" y2="-1.15" layer="31"/>
+<rectangle x1="0.4" y1="-1.65" x2="0.6" y2="-1.15" layer="31"/>
+<rectangle x1="0.9" y1="-1.65" x2="1.1" y2="-1.15" layer="31"/>
+<rectangle x1="1.4" y1="-1.65" x2="1.6" y2="-1.15" layer="31"/>
 </package>
 <package name="S-PVSON-N10">
 <description>&lt;h3&gt;TI S-PVSON-N10 Package&lt;/h3&gt;
 &lt;p&gt;0.07mm solder mask clearance suggested.&lt;/p&gt;
 &lt;p&gt;Data based on TI Documents 4204102-3/L 09/11, 4206565-3/Y 08/15, 4206987-2/P 04/16&lt;/p&gt;</description>
-<smd name="1" x="-1" y="-1.475" dx="0.28" dy="0.85" layer="1" roundness="100" thermals="no"/>
-<smd name="2" x="-0.5" y="-1.475" dx="0.28" dy="0.85" layer="1" roundness="100" thermals="no"/>
-<smd name="3" x="0" y="-1.475" dx="0.28" dy="0.85" layer="1" roundness="100" thermals="no"/>
-<smd name="4" x="0.5" y="-1.475" dx="0.28" dy="0.85" layer="1" roundness="100" thermals="no"/>
-<smd name="5" x="1" y="-1.475" dx="0.28" dy="0.85" layer="1" roundness="100" thermals="no"/>
-<smd name="6" x="1" y="1.475" dx="0.28" dy="0.85" layer="1" roundness="100" rot="R180" thermals="no"/>
-<smd name="7" x="0.5" y="1.475" dx="0.28" dy="0.85" layer="1" roundness="100" rot="R180" thermals="no"/>
-<smd name="8" x="0" y="1.475" dx="0.28" dy="0.85" layer="1" roundness="100" rot="R180" thermals="no"/>
-<smd name="9" x="-0.5" y="1.475" dx="0.28" dy="0.85" layer="1" roundness="100" rot="R180" thermals="no"/>
-<smd name="10" x="-1" y="1.475" dx="0.28" dy="0.85" layer="1" roundness="100" rot="R180" thermals="no"/>
+<smd name="1" x="-1" y="-1.475" dx="0.28" dy="0.85" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="2" x="-0.5" y="-1.475" dx="0.28" dy="0.85" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="3" x="0" y="-1.475" dx="0.28" dy="0.85" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="4" x="0.5" y="-1.475" dx="0.28" dy="0.85" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="5" x="1" y="-1.475" dx="0.28" dy="0.85" layer="1" roundness="100" thermals="no" cream="no"/>
+<smd name="6" x="1" y="1.475" dx="0.28" dy="0.85" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="7" x="0.5" y="1.475" dx="0.28" dy="0.85" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="8" x="0" y="1.475" dx="0.28" dy="0.85" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="9" x="-0.5" y="1.475" dx="0.28" dy="0.85" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
+<smd name="10" x="-1" y="1.475" dx="0.28" dy="0.85" layer="1" roundness="100" rot="R180" thermals="no" cream="no"/>
 <smd name="PAD" x="0" y="0" dx="3.8" dy="1.65" layer="1" stop="no" thermals="no" cream="no"/>
 <rectangle x1="-1.27" y1="-0.895" x2="1.27" y2="0.895" layer="29"/>
 <rectangle x1="1.2" y1="0.04" x2="1.97" y2="0.46" layer="29"/>
@@ -839,16 +840,6 @@ grid 2.54 mm</description>
 <wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
-<rectangle x1="-0.12" y1="1.1" x2="0.12" y2="1.5" layer="51"/>
-<rectangle x1="0.38" y1="1.1" x2="0.62" y2="1.5" layer="51"/>
-<rectangle x1="0.88" y1="1.1" x2="1.12" y2="1.5" layer="51"/>
-<rectangle x1="-0.62" y1="1.1" x2="-0.38" y2="1.5" layer="51"/>
-<rectangle x1="-1.12" y1="1.1" x2="-0.88" y2="1.5" layer="51"/>
-<rectangle x1="-0.12" y1="-1.5" x2="0.12" y2="-1.1" layer="51" rot="R180"/>
-<rectangle x1="-0.62" y1="-1.5" x2="-0.38" y2="-1.1" layer="51" rot="R180"/>
-<rectangle x1="-1.12" y1="-1.5" x2="-0.88" y2="-1.1" layer="51" rot="R180"/>
-<rectangle x1="0.38" y1="-1.5" x2="0.62" y2="-1.1" layer="51" rot="R180"/>
-<rectangle x1="0.88" y1="-1.5" x2="1.12" y2="-1.1" layer="51" rot="R180"/>
 <rectangle x1="-1.2" y1="-0.825" x2="1.2" y2="0.825" layer="51"/>
 <rectangle x1="1.2" y1="0.135" x2="1.5" y2="0.365" layer="51"/>
 <rectangle x1="1.2" y1="-0.365" x2="1.5" y2="-0.135" layer="51"/>
@@ -875,6 +866,16 @@ grid 2.54 mm</description>
 <vertex x="-2.25" y="1.75"/>
 </polygon>
 <rectangle x1="-1.5625" y1="-2.1" x2="-1.25" y2="-1.5" layer="21"/>
+<wire x1="-1" y1="-1.2" x2="-1" y2="-1.75" width="0.2" layer="31"/>
+<wire x1="-0.5" y1="-1.2" x2="-0.5" y2="-1.75" width="0.2" layer="31"/>
+<wire x1="0" y1="-1.2" x2="0" y2="-1.75" width="0.2" layer="31"/>
+<wire x1="0.5" y1="-1.2" x2="0.5" y2="-1.75" width="0.2" layer="31"/>
+<wire x1="1" y1="-1.2" x2="1" y2="-1.75" width="0.2" layer="31"/>
+<wire x1="-1" y1="1.75" x2="-1" y2="1.2" width="0.2" layer="31"/>
+<wire x1="-0.5" y1="1.75" x2="-0.5" y2="1.2" width="0.2" layer="31"/>
+<wire x1="0" y1="1.75" x2="0" y2="1.2" width="0.2" layer="31"/>
+<wire x1="0.5" y1="1.75" x2="0.5" y2="1.2" width="0.2" layer="31"/>
+<wire x1="1" y1="1.75" x2="1" y2="1.2" width="0.2" layer="31"/>
 </package>
 <package name="S-PWSON-N6">
 <description>&lt;h3&gt;TI S-PWSON-N6 Plastic Small Outline No-Lead Package&lt;/h3&gt;
@@ -1105,18 +1106,18 @@ grid 2.54 mm</description>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1" y="1" radius="0.14141875" width="0.127" layer="21"/>
-<smd name="1" x="-1.4" y="1.125" dx="0.6" dy="0.2" layer="1" roundness="70"/>
-<smd name="2" x="-1.4" y="0.675" dx="0.6" dy="0.2" layer="1" roundness="70"/>
-<smd name="3" x="-1.4" y="0.225" dx="0.6" dy="0.2" layer="1" roundness="70"/>
-<smd name="4" x="-1.4" y="-0.225" dx="0.6" dy="0.2" layer="1" roundness="70"/>
-<smd name="5" x="-1.4" y="-0.675" dx="0.6" dy="0.2" layer="1" roundness="70"/>
-<smd name="6" x="-1.4" y="-1.125" dx="0.6" dy="0.2" layer="1" roundness="70"/>
-<smd name="7" x="1.4" y="-1.125" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180"/>
-<smd name="8" x="1.4" y="-0.675" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180"/>
-<smd name="9" x="1.4" y="-0.225" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180"/>
-<smd name="10" x="1.4" y="0.225" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180"/>
-<smd name="11" x="1.4" y="0.675" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180"/>
-<smd name="12" x="1.4" y="1.125" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180"/>
+<smd name="1" x="-1.4" y="1.125" dx="0.6" dy="0.2" layer="1" roundness="70" cream="no"/>
+<smd name="2" x="-1.4" y="0.675" dx="0.6" dy="0.2" layer="1" roundness="70" cream="no"/>
+<smd name="3" x="-1.4" y="0.225" dx="0.6" dy="0.2" layer="1" roundness="70" cream="no"/>
+<smd name="4" x="-1.4" y="-0.225" dx="0.6" dy="0.2" layer="1" roundness="70" cream="no"/>
+<smd name="5" x="-1.4" y="-0.675" dx="0.6" dy="0.2" layer="1" roundness="70" cream="no"/>
+<smd name="6" x="-1.4" y="-1.125" dx="0.6" dy="0.2" layer="1" roundness="70" cream="no"/>
+<smd name="7" x="1.4" y="-1.125" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180" cream="no"/>
+<smd name="8" x="1.4" y="-0.675" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180" cream="no"/>
+<smd name="9" x="1.4" y="-0.225" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180" cream="no"/>
+<smd name="10" x="1.4" y="0.225" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180" cream="no"/>
+<smd name="11" x="1.4" y="0.675" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180" cream="no"/>
+<smd name="12" x="1.4" y="1.125" dx="0.6" dy="0.2" layer="1" roundness="70" rot="R180" cream="no"/>
 <smd name="PAD" x="0" y="0" dx="1.2" dy="2" layer="1" rot="R180" stop="no" cream="no"/>
 <polygon width="0.127" layer="39">
 <vertex x="-1.7" y="1.5"/>
@@ -1129,6 +1130,18 @@ grid 2.54 mm</description>
 <rectangle x1="-0.6" y1="-1" x2="0.6" y2="-0.1" layer="29"/>
 <rectangle x1="-0.6" y1="0.1" x2="0.6" y2="1" layer="31"/>
 <rectangle x1="-0.6" y1="-1" x2="0.6" y2="-0.1" layer="31"/>
+<wire x1="-1.6" y1="1.125" x2="-1.2" y2="1.125" width="0.127" layer="31"/>
+<wire x1="-1.6" y1="0.675" x2="-1.2" y2="0.675" width="0.127" layer="31"/>
+<wire x1="-1.6" y1="0.225" x2="-1.2" y2="0.225" width="0.127" layer="31"/>
+<wire x1="-1.6" y1="-0.225" x2="-1.2" y2="-0.225" width="0.127" layer="31"/>
+<wire x1="-1.6" y1="-0.675" x2="-1.2" y2="-0.675" width="0.127" layer="31"/>
+<wire x1="-1.6" y1="-1.125" x2="-1.2" y2="-1.125" width="0.127" layer="31"/>
+<wire x1="1.2" y1="-1.125" x2="1.6" y2="-1.125" width="0.127" layer="31"/>
+<wire x1="1.2" y1="-0.675" x2="1.6" y2="-0.675" width="0.127" layer="31"/>
+<wire x1="1.2" y1="-0.225" x2="1.6" y2="-0.225" width="0.127" layer="31"/>
+<wire x1="1.2" y1="0.225" x2="1.6" y2="0.225" width="0.127" layer="31"/>
+<wire x1="1.2" y1="0.675" x2="1.6" y2="0.675" width="0.127" layer="31"/>
+<wire x1="1.2" y1="1.125" x2="1.6" y2="1.125" width="0.127" layer="31"/>
 </package>
 <package name="S-PWSON-N8">
 <description>&lt;h3&gt;8 Pin PWSON Package (DSG)&lt;/h3&gt;

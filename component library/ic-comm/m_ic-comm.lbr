@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2068,7 +2068,7 @@ alternative interfaces of the Type-C specification.</description>
 <technologies>
 <technology name="">
 <attribute name="MANUF" value="OnSemiconductor" constant="no"/>
-<attribute name="PARTNUM" value="FSA221UMX" constant="no"/>
+<attribute name="PARTNUM" value="FSA221L10X" constant="no"/>
 </technology>
 </technologies>
 </device>

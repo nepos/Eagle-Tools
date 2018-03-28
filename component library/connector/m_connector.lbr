@@ -2092,7 +2092,7 @@
 <circle x="-1.35" y="-0.25" radius="0.111803125" width="0.06" layer="21"/>
 <text x="1.25" y="-1.55" size="0.6096" layer="25">&gt;NAME</text>
 </package>
-<package name="FPC05E-40PBX">
+<package name="FPC50E-40PBX">
 <smd name="1" x="-9.75" y="2.15" dx="0.9" dy="0.3" layer="1" rot="R90" cream="no"/>
 <smd name="2" x="-9.25" y="2.15" dx="0.9" dy="0.3" layer="1" rot="R90" cream="no"/>
 <smd name="3" x="-8.75" y="2.15" dx="0.9" dy="0.3" layer="1" rot="R90" cream="no"/>
@@ -5741,20 +5741,19 @@ See http://www.mouser.com/ds/2/40/5804-1016871.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="MANUF" value="AVX" constant="no"/>
-<attribute name="PARTNUM" value="
-245804010000829+" constant="no"/>
+<attribute name="PARTNUM" value=" 245804010000829+" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FPC05E-40PBX" prefix="J">
+<deviceset name="FPC50E-40PBX" prefix="J">
 <description>40-pin FFC cable header with 0.5mm pitch</description>
 <gates>
 <gate name="G$1" symbol="CONNECTOR_40+2PIN" x="-5.08" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="FPC05E-40PBX">
+<device name="" package="FPC50E-40PBX">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -5801,7 +5800,7 @@ See http://www.mouser.com/ds/2/40/5804-1016871.pdf</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PARTNUM" value="FPC05E-40PBX"/>
+<attribute name="PARTNUM" value="FPC50E-40PBX"/>
 </technology>
 </technologies>
 </device>
@@ -6167,7 +6166,7 @@ See http://www.mouser.com/ds/2/40/5804-1016871.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="50E-26PBX" prefix="J">
+<deviceset name="FPC50E-26PBX" prefix="J">
 <description>&lt;h3&gt;50E-NPBX Flat Cable 26 Pin Header&lt;/h3&gt;</description>
 <gates>
 <gate name="-1" symbol="M" x="2.54" y="0" addlevel="always"/>
@@ -6229,7 +6228,7 @@ See http://www.mouser.com/ds/2/40/5804-1016871.pdf</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PARTNUM" value="50E-26PBX" constant="no"/>
+<attribute name="PARTNUM" value="FPC50E-26PBX" constant="no"/>
 </technology>
 </technologies>
 </device>
